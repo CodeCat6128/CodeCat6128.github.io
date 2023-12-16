@@ -12,12 +12,12 @@ const totalImages = frontmatter.challenge_images.length;
 <!doctype html>
 <html lang="en" class="scroll-smooth">
 	<head>
-		<BaseHead title={`${SITE_TITLE} - works - ${frontmatter.title}`} description={frontmatter.page_description} favicon={SITE_FAVICON} />
+		<BaseHead title={`${SITE_TITLE}: ${frontmatter.title}`} description={frontmatter.page_description} favicon={SITE_FAVICON} />
 	</head>
 	<body class="text-black bg-white-200 min-h-screen font-inter m-0 p-0">
 		<Header logo={`../${SITE_LOGO}`} work_url='#works' contact_url='#footer' />
 		<main class="z-10 pt-[70px] sm:pt-13">
-            <section class="w-full h-min px-6 py-9 sm:px-11 sm:py-12 flex flex-col md:flex-row lg:grid lg:grid-cols-2 gap-7">
+            <section class="w-full h-min px-6 py-9 sm:px-11 sm:py-12 flex flex-col md:flex-row lg:grid lg:grid-cols-2 gap-7" id="hero">
                 <div class="md:w-3/6 lg:w-full">
                     <a href="/" class="text-pl font-medium text-black leading-none flex flex-row gap-1 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7" class="ml-2 w-6 h-6 stroke-2">

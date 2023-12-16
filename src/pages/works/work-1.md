@@ -4,7 +4,7 @@ layout: '../../layouts/WorkLayout.astro'
 title: 'Infokrasa'
 description: "Infokrasa is a cutting-edge e-commerce platform with mobile application that is propelling Infokrasa's online presence to new heights."
 page_description: 'Infokrasa project'
-link: 'https://'
+link: 'https://apps.apple.com/cz/app/infokr%C3%A1sa/id6447010054'
 labels: ['UX/UI Design', 'Product Design']
 placeholder_main: '../works/work-1-placeholder-1.webp'
 main_url: '../work-1-video.mp4'
