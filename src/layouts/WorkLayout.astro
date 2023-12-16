@@ -42,7 +42,7 @@ const totalImages = frontmatter.challenge_images.length;
                 </div>
             </section>
             {frontmatter.main_url.slice(((frontmatter.main_url.lastIndexOf(".") - 1) >>> 0) + 2) === 'mp4' ? (
-                <video class="w-full h-full bg-white-100 rounded-lg sm:rounded-2xl lg:rounded-3xl" autoplay="true" muted="true" loop="true">
+                <video class="w-full h-full bg-white-100" autoplay="true" muted="true" loop="true">
                     <source src={frontmatter.main_url} type="video/mp4">
                 </video>
             ) : (
