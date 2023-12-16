@@ -9,8 +9,8 @@ are protected under a NDA."
 page_description: 'Energy Monitoring App project'
 link: ''
 labels: ['UX/UI Design', 'Mobile App']
-placeholder_main: '../public/works/work-2-placeholder-1.webp'
-main_url: '../public/works/work-2-placeholder-2.webp'
+placeholder_main: '../works/work-2-placeholder-1.webp'
+main_url: '../works/work-2-placeholder-2.webp'
 # File
 slug: 'work-2'
 index: 2
@@ -19,15 +19,15 @@ challenge_text: ["Designing an intuitive user interface and implementing seamles
 for the Energy Monitoring App presented a significant challenge. Balancing real-time energy tracking with user-friendly features required meticulous planning to ensure 
 a smooth and efficient experience. Additionally, addressing the diverse needs of users and integrating advanced optimization solutions posed complexities that demanded innovative solutions."]
 challenge_image: ''
-challenge_images: ['../public/works/work-2-placeholder-3.webp', 
-                   '../public/works/work-2-placeholder-4.webp', 
-                   '../public/works/work-2-placeholder-5.webp', 
-                   '../public/works/work-2-placeholder-6.webp']
+challenge_images: ['../works/work-2-placeholder-3.webp', 
+                   '../works/work-2-placeholder-4.webp', 
+                   '../works/work-2-placeholder-5.webp', 
+                   '../works/work-2-placeholder-6.webp']
 # Solution
 solution_text: ["To overcome the challenges, we adopted a user-centric design approach, prioritizing simplicity without compromising on functionality. We implemented an intuitive interface with clear visualizations, making real-time energy data easily understandable for users.", "Collaborating closely with stakeholders and conducting usability testing allowed 
 us to refine the app's features, ensuring it met the diverse needs of users. 
 Advanced optimization solutions were seamlessly integrated, providing users 
 with a comprehensive and efficient tool for energy monitoring and management."]
-solution_image: '../public/works/work-2-placeholder-7.webp'
+solution_image: '../works/work-2-placeholder-7.webp'
 
 ---
