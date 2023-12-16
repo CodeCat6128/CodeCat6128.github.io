@@ -4,7 +4,6 @@ import mdx from '@astrojs/mdx';
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: 'https://codecat6128.github.io/ravildsgnwebtestpage1612/',
-  base: '/',
+  site: 'https://codecat6128.github.io/codecat6128.github.io/',
   integrations: [mdx(), tailwind()]
 });
