@@ -42,11 +42,9 @@ const totalImages = frontmatter.challenge_images.length;
                 </div>
             </section>
             {frontmatter.main_url.slice(((frontmatter.main_url.lastIndexOf(".") - 1) >>> 0) + 2) === 'mp4' ? (
-                <section class="bg-white-100 px-6 py-6 sm:px-11 sm:py-12">
-                    <video class="w-full h-full bg-white-100 rounded-lg sm:rounded-2xl lg:rounded-3xl shadow-custom" autoplay="true" muted="true" loop="true">
-                        <source src={frontmatter.main_url} type="video/mp4">
-                    </video>
-                </section>
+                <video class="w-full h-full bg-white-100 rounded-lg sm:rounded-2xl lg:rounded-3xl" autoplay="true" muted="true" loop="true">
+                    <source src={frontmatter.main_url} type="video/mp4">
+                </video>
             ) : (
                 <img src={`../${frontmatter.main_url}`} class="w-full h-full object-cover">
             ) }
