@@ -5,6 +5,6 @@ export async function GET() {
 	return rss({
 		title: SITE_TITLE,
 		description: SITE_DESCRIPTION,
-		site: 'https://codecat6128.github.io/'
+		site: 'https://codecat6128.github.io/',
 	});
 }
