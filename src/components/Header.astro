@@ -10,7 +10,7 @@ const { logo, work_url, contact_url } = Astro.props;
 
 <header class="fixed w-screen h-fit z-50">
 	<nav class="px-6 sm:px-11 py-6 sm:py-9 bg-black flex justify-between items-center fixed top-0 left-0 w-screen z-20">
-		<img src={logo} alt="Logo" class="z-50">
+		<a href="/" class="z-50"><img src={logo} alt="Logo" class="z-50"></a>
 		<div class="hidden sm:flex gap-7 pt-3 pb-1">
 			<a href={work_url} class="text-white-200 leading-snug text-pm">Work</a>
 			<a href={contact_url} class="text-white-200 leading-snug text-pm">Contact</a>
