@@ -1,0 +1,37 @@
+---
+interface Props {
+  about_url: string,
+}
+
+const { about_url } = Astro.props;
+
+const placeholder_url = '../../public/placeholder-hero.webp';
+const behance_link = 'https://www.behance.net/ravil-ai';
+const linkedin_link = 'https://www.linkedin.com/in/ravilitikeev/';
+const title = 'Digital Designer from Prague';
+const decription = 'Hi, I’m Ravil Itikeev, a digital designer with a keen eye for user-centered design.'
+---
+
+<section class="min-h-screen h-min w-full bg-black pt-[70px] sm:pt-13 pb-9 px-6 sm:px-9 md:px-12 lg:px-12 flex flex-col justify-between" id="hero">
+    <div />
+    <div class="w-full h-min flex flex-col lg:flex-row lg:grid lg:grid-cols-2 gap-6 sm:gap-9">
+        <img src={placeholder_url} alt="Placeholder" class="ml-auto h-full object-cover w-auto block">
+        <div class="flex flex-col lg:py-[70px] gap-7 w-full xl:w-4/6 pt-6 pb-6 z-10">
+            <h1 class="text-mh1 sm:text-h1 md:text-[52px] font-[600] leading-[100%] lg:text-h1 text-white-200 break-words w-full">{title}</h1>
+            <p class="text-pl text-white-200 break-words w-full">{decription}</p>
+            <a href={about_url} class="text-white-200 hover:text-black active:text-black disabled:text-gray-300 text-pm mt-6 lg:mt-[26px] px-8 py-5 uppercase border rounded-full border-white-200 active:border-gray-200 disabled:border-gray-300 bg-[#ffffff00] hover:bg-white-200 active:bg-gray-200 disabled:bg-[#00000000] w-fit hidden md:flex flex-nowarp items-center ease-out duration-200">
+                Scroll for more
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6" class="ml-2 w-5 h-5 stroke-2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="mx-0 flex flex-row justify-between h-min w-auto md:pt-12">
+        <div class="flex flex-row gap-6">
+            <a href={behance_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">Behance</a>
+            <a href={linkedin_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">LinkedIn</a>
+        </div>
+        <p class="text-white-200 leading-snug text-pm">2023</p>
+    </div>
+</section>

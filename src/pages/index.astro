@@ -1,0 +1,34 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Works from '../components/Works.astro';
+import Capabilities from '../components/Capabilities.astro';
+import Experience from '../components/Experience.astro';
+// import Blog from '../components/Blog.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_FAVICON, SITE_LOGO } from '../consts';
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth min-w-[380px]">
+	<head>
+		<BaseHead title={`${SITE_TITLE} - home`} description={SITE_DESCRIPTION} favicon={SITE_FAVICON} />
+	</head>
+	<body class="text-black bg-white-200 min-h-screen font-inter m-0 p-0">
+		<Header logo={SITE_LOGO} work_url='#works' contact_url='#footer' />
+		<main class="z-10">
+			<Hero about_url='#about' />
+			<About works_url='#works' />
+			<Works />
+			<div class="h-[1px] w-full bg-gray-100" />
+			<Capabilities />
+			<div class="h-[1px] w-full bg-gray-100" />
+			<Experience />
+			<!-- <div class="h-[1px] w-full bg-gray-100" /> -->
+			<!-- <Blog /> -->
+		</main>
+		<Footer top_url='#hero' />
+	</body>
+</html>

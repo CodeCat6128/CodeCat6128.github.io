@@ -1,0 +1,22 @@
+---
+
+const works = await Astro.glob('../pages/works/*.md');
+const totalWorks = works.length;
+
+---
+
+<section class="w-full h-min px-6 py-9 sm:px-11 sm:py-12 flex flex-col md:grid grid-cols-2 gap-y-12 gap-x-9" id="works">
+    {works.map((work, index) => (
+        <a href={`/works/${work.frontmatter.slug}/`} class={((index + 2) % 3 === 0 || (index + 1) % 3 === 0) && ((totalWorks >= 4 && index !== totalWorks && totalWorks % 3 !== 0) || totalWorks === 3 || totalWorks % 3 === 0) ? 'col-span-1 flex flex-col gap-6 sm:gap-5' : 'col-span-2 flex flex-col gap-6 sm:gap-5'}>
+            <div class="relative rounded-2xl h-[340px] md:h-auto w-full duration-200 transition-all hover:bg-185% bg-180% sm:hover:bg-155% sm:bg-150% md:hover:bg-105% md:bg-100% bg-center ease-in-out" style={{ backgroundImage: `url(${work.frontmatter.placeholder_main})` }}>
+                <img src={work.frontmatter.placeholder_main} class="hidden md:block w-full rounded-2xl opacity-0">
+                <div class="absolute left-5 bottom-4 flex flex-row items-end gap-2 flex-wrap">
+                    {work.frontmatter.labels.map(label => (
+                        <p class="text-pn text-black leading-snug px-4 py-1 rounded-full bg-white-100">{label}</p>
+                    ))}
+                </div>
+            </div>
+            <h4 class="text-black text-h4 font-normal sm:font-semibold">{work.frontmatter.title}</h4>
+        </a>
+    ))}
+</section>

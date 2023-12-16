@@ -1,0 +1,31 @@
+---
+interface Props {
+	logo: string;
+	work_url: string;
+	contact_url: string;
+}
+
+const { logo, work_url, contact_url } = Astro.props;
+---
+
+<header class="fixed w-screen h-fit z-50">
+	<nav class="px-6 sm:px-11 py-6 sm:py-9 bg-black flex justify-between items-center fixed top-0 left-0 w-screen z-20">
+		<img src={logo} alt="Logo" class="z-50">
+		<div class="hidden sm:flex gap-7 pt-3 pb-1">
+			<a href={work_url} class="text-white-200 leading-snug text-pm">Work</a>
+			<a href={contact_url} class="text-white-200 leading-snug text-pm">Contact</a>
+		</div>
+		<button id="nav-icon" class="block sm:hidden relative m-0 p-0">
+			<span class="absolute block rounded-full bg-white-200 m-0 p-0"></span>
+			<span class="absolute block rounded-full bg-white-200 m-0 p-0"></span>
+			<span class="absolute block rounded-full bg-white-200 m-0 p-0"></span>
+			<span class="absolute block rounded-full bg-white-200 m-0 p-0"></span>
+		</button>
+	</nav>
+	<div id="nav-menu" class="absolute w-full h-screen bg-black flex sm:hidden flex-col gap-[28px] px-6 py-6 left-0 right-0 z-10">
+		<a href={work_url} id="nav-link" class="text-white-200 leading-snug text-pl">Work</a>
+		<a href={contact_url} id="nav-link" class="text-white-200 leading-snug text-pl">Contact</a>
+	</div>
+</header>
+
+<script src="../scripts/header.js">

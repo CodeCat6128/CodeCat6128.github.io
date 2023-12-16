@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Inter;
+    src: url("../../public/inter.ttf")
+}
+#nav-icon {
+    width: 24px;
+    height: 20px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+#nav-icon span {
+    height: 2px;
+    opacity: 1;
+    left: 0;
+    width: 100%;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+#nav-icon span:nth-child(1) {
+    top: 0px;
+}
+#nav-icon span:nth-child(2), #nav-icon span:nth-child(3) {
+    top: 8px;
+}
+#nav-icon span:nth-child(4) {
+    top: 16px;
+}
+#nav-icon.open span:nth-child(1) {
+    top: 13px;
+    width: 0%;
+    left: 50%;
+}
+#nav-icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#nav-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#nav-icon.open span:nth-child(4) {
+    top: 16px;
+    width: 0%;
+    left: 50%;
+}
+#nav-menu {
+    top: -100vh;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+#nav-menu.open {
+    top: 64px;
+}
+.shadow-custom {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.03), 16.981px 12.453px 46.415px 0px rgba(0, 0, 0, 0.03), 66.792px 49.811px 83.774px 0px rgba(0, 0, 0, 0.02), 151.698px 112.075px 113.208px 0px rgba(0, 0, 0, 0.01), 269.434px 199.245px 133.585px 0px rgba(0, 0, 0, 0.00), 420px 312.453px 146.038px 0px rgba(0, 0, 0, 0.00); 
+}
