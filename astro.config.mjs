@@ -5,6 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: 'https://codecat6128.github.io/ravildsgnwebtestpage1612/',
-  base: '/src',
+  base: '/',
   integrations: [mdx(), tailwind()]
 });
