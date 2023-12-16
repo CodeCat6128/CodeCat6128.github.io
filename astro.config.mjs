@@ -4,7 +4,7 @@ import mdx from '@astrojs/mdx';
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: 'https://http://ravildsgnwebtestpage1612.github.io/',
+  site: 'https://codecat6128.github.io/ravildsgnwebtestpage1612/',
   base: '/src',
   integrations: [mdx(), tailwind()]
 });
