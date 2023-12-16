@@ -20,9 +20,9 @@ challenge_images: ['../works/work-1-placeholder-3.webp',
                    '../works/work-1-placeholder-5.webp', 
                    '../works/work-1-placeholder-6.webp']
 # Solution
-solution_text: ["The challenge in this project was to navigate the complexities of diverse user needs, requiring a design approach that would accommodate various preferences and ensure inclusivity. Streamlining intricate user journeys within the mobile app posed 
-a significant hurdle, prompting a redesign focused on simplifying navigation and improving overall user experience.
-Aligning the app's design with the established brand identity presented a challenge, requiring careful consideration of visual elements to maintain brand consistency. Meeting both user needs and the client's business goals through the design became a pivotal challenge, demanding a strategic approach to create a successful B2C mobile app."]
+solution_text: ["To tackle the challenge of diverse user needs, the solution emphasized the implementation of a robust filtering system within the app's search functionality. 
+This feature allowed users to refine their search results based on specific criteria, ensuring a tailored and efficient experience for each individual. In addressing complex user journeys, the solution incorporated a simplified onboarding process 
+and contextual tooltips, guiding users seamlessly through various app sections. "]
 solution_image: '../works/work-1-placeholder-1.webp'
 
 ---

@@ -33,7 +33,7 @@ const totalImages = frontmatter.challenge_images.length;
                         ))}
                     </div>
                     <h1 class="text-black text-mh1 sm:text-h1 font-semibold sm:font-normal">{frontmatter.title}</h1>
-                    <h4 class="text-black text-pl sm:text-h4 leading-snug sm:font-normal">{frontmatter.description}</h4>
+                    <h4 class="text-black text-pl sm:text-h4 sm:leading-snug sm:font-normal max-w-[600px]">{frontmatter.description}</h4>
                     {frontmatter.link !== '' ? (
                         <a href={frontmatter.link} target="_blank" class="text-black hover:text-white-200 active:text-black disabled:text-gray-300 text-pb sm:text-pn font-normal sm:mt-7 px-8 py-5 uppercase border rounded-full border-black active:border-gray-200 disabled:border-gray-300 bg-[#00000000] hover:bg-black active:bg-gray-200 disabled:bg-[#00000000] min-w-fit w-full sm:w-fit ease-out duration-200 justify-center hidden sm:block">
                             check out live version
