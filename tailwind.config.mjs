@@ -29,6 +29,7 @@ export default {
 			'11': '50px',
 			'12': '60px',
 			'13': '120px',
+			'14': '100px',
 		},
 		fontFamily: {
 			'inter': ['"Inter"', '"sans-serif"'],
