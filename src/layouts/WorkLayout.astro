@@ -12,7 +12,7 @@ const totalImages = frontmatter.challenge_images.length;
 <!doctype html>
 <html lang="en" class="scroll-smooth">
 	<head>
-		<BaseHead title={`${SITE_TITLE}: ${frontmatter.title}`} description={frontmatter.page_description} favicon={SITE_FAVICON} />
+		<BaseHead title={`${SITE_TITLE}: Case studies`} description={frontmatter.page_description} favicon={SITE_FAVICON} />
 	</head>
 	<body class="text-black bg-white-200 min-h-screen font-inter m-0 p-0">
 		<Header logo={`../${SITE_LOGO}`} work_url='#works' contact_url='#footer' />
@@ -83,7 +83,7 @@ const totalImages = frontmatter.challenge_images.length;
             ) : null }
             <section class="w-full h-min px-6 py-9 sm:px-11 sm:py-[100px] flex flex-col gap-8" id="works">
                 <h2 class="text-black text-mh2 sm:text-h2 md:w-3/6 lg:w-full mt-6">More work</h2>
-                <div class="grid grid-cols-2 md:flex-row gap-5">
+                <div class="flex md:grid grid-cols-2 flex-col md:flex-row gap-5">
                     {works.map((work, index) => (
                         work.frontmatter.title !== frontmatter.title && ((frontmatter.index > 3 && index < 2) || (frontmatter.index <= 3 && index <= 2)) ? (
                             <a href={`/works/${work.frontmatter.slug}/`} class="col-span-1 h-auto flex flex-col gap-6 sm:gap-5">
