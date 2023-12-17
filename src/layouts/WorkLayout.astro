@@ -16,87 +16,101 @@ const totalImages = frontmatter.challenge_images.length;
 	</head>
 	<body class="text-black bg-white-200 min-h-screen font-inter m-0 p-0">
 		<Header logo={`../${SITE_LOGO}`} work_url='#works' contact_url='#footer' />
-		<main class="z-10 pt-[70px] sm:pt-13">
-            <section class="w-full h-min px-6 py-9 sm:px-11 sm:py-12 flex flex-col md:flex-row lg:grid lg:grid-cols-2 gap-7" id="hero">
-                <div class="md:w-3/6 lg:w-full">
-                    <a href="/" class="text-pl font-medium text-black leading-none flex flex-row gap-1 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7" class="ml-2 w-6 h-6 stroke-2">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-                        </svg>
-                        View all projects
-                    </a>
-                </div>
-                <div class="flex flex-col gap-6 sm:gap-5 text-left w-full">
-                    <div class="flex flex-row warp gap-2 sm:mb-2">
-                        {frontmatter.labels.map(label => (
-                            <p class="text-pn text-black leading-snug px-4 py-1 rounded-full border-black border">{label}</p>
-                        ))}
-                    </div>
-                    <h1 class="text-black text-mh1 sm:text-h1 font-semibold sm:font-normal">{frontmatter.title}</h1>
-                    <h4 class="text-black text-pl sm:text-h4 sm:leading-snug sm:font-normal max-w-[600px]">{frontmatter.description}</h4>
-                    {frontmatter.link !== '' ? (
-                        <a href={frontmatter.link} target="_blank" class="text-black hover:text-white-200 active:text-black disabled:text-gray-300 text-pb sm:text-pn font-normal sm:mt-7 px-8 py-5 uppercase border rounded-full border-black active:border-gray-200 disabled:border-gray-300 bg-[#00000000] hover:bg-black active:bg-gray-200 disabled:bg-[#00000000] min-w-fit w-full sm:w-fit ease-out duration-200 justify-center hidden sm:block">
-                            check out live version
+		<main class="z-10 pt-[70px] sm:pt-13 flex flex-col">
+            <section class="w-full h-min px-6 py-9 sm:px-11 sm:py-12 flex justify-center" id="hero">
+                <div class="w-full max-w-[1440px] flex flex-col md:flex-row lg:grid lg:grid-cols-2 gap-7">
+                    <div class="md:w-3/6 lg:w-full">
+                        <a href="/" class="text-pl font-medium text-black leading-none flex flex-row gap-1 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7" class="ml-2 w-6 h-6 stroke-2">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                            </svg>
+                            View all projects
                         </a>
-                    ) : null }
+                    </div>
+                    <div class="flex flex-col gap-6 sm:gap-5 text-left w-full">
+                        <div class="flex flex-row warp gap-2 sm:mb-2">
+                            {frontmatter.labels.map(label => (
+                                <p class="text-pn text-black leading-snug px-4 py-1 rounded-full border-black border">{label}</p>
+                            ))}
+                        </div>
+                        <h1 class="text-black text-mh1 sm:text-h1 font-semibold sm:font-normal">{frontmatter.title}</h1>
+                        <h4 class="text-black text-pl sm:text-h4 sm:leading-snug sm:font-normal max-w-[600px]">{frontmatter.description}</h4>
+                        {frontmatter.link !== '' ? (
+                            <a href={frontmatter.link} target="_blank" class="text-black hover:text-white-200 active:text-black disabled:text-gray-300 text-pb sm:text-pn font-normal sm:mt-7 px-8 py-5 uppercase border rounded-full border-black active:border-gray-200 disabled:border-gray-300 bg-[#00000000] hover:bg-black active:bg-gray-200 disabled:bg-[#00000000] min-w-fit w-full sm:w-fit ease-out duration-200 justify-center hidden sm:block">
+                                check out live version
+                            </a>
+                        ) : null }
+                    </div>
                 </div>
             </section>
             {frontmatter.main_url.slice(((frontmatter.main_url.lastIndexOf(".") - 1) >>> 0) + 2) === 'mp4' ? (
-                <video class="w-full h-full bg-white-100" autoplay="true" muted="true" loop="true">
-                    <source src={frontmatter.main_url} type="video/mp4">
-                </video>
+                <div class="w-full flex justify-center">
+                    <video class="w-full max-w-[1440px] h-full bg-white-100 2xl:rounded-2xl" autoplay="true" muted="true" loop="true">
+                        <source src={frontmatter.main_url} type="video/mp4">
+                    </video>
+                </div>
             ) : (
-                <img src={`../${frontmatter.main_url}`} class="w-full h-full object-cover">
+                <div class="w-full flex justify-center">
+                    <img src={`../${frontmatter.main_url}`} class="w-full max-w-[1440px] h-full object-cover 2xl:rounded-2xl">
+                </div>
             ) }
-            <section class="w-full h-min px-6 py-9 sm:px-11 sm:py-[100px] flex flex-col md:flex-row lg:grid lg:grid-cols-2 gap-7">
-                <h2 class="text-black text-mh2 sm:text-h2 md:w-3/6 lg:w-full">Challenge</h2>
-                <div class="flex flex-col gap-5">
-                    {frontmatter.challenge_text.map((text) => (
-                        <h3 class="text-black text-pl">{text}</h3>
-                    ))}
+            <section class="w-full h-min px-6 py-9 sm:px-11 sm:py-[100px] flex justify-center">
+                <div class="w-full max-w-[1440px] flex flex-col md:flex-row lg:grid lg:grid-cols-2 gap-7">
+                    <h2 class="text-black text-mh2 sm:text-h2 md:w-3/6 lg:w-full">Challenge</h2>
+                    <div class="flex flex-col gap-5">
+                        {frontmatter.challenge_text.map((text) => (
+                            <h3 class="text-black text-pl">{text}</h3>
+                        ))}
+                    </div>
                 </div>
             </section>
-            <section class="w-full flex flex-col gap-7">
-                {frontmatter.challenge_image !== '' ? (
-                    <img src={`../${frontmatter.challenge_image}`} alt="Placeholder" class="h-full w-auto object-cover" />
-                ) : null }
-                <div class="w-full flex flex-col md:grid grid-cols-2 sm:gap-7 sm:px-9 md:px-11">
+            <section class="w-full flex items-center flex-col gap-7">
+                <div class="w-full max-w-[1440px]">
+                    {frontmatter.challenge_image !== '' ? (
+                        <img src={`../${frontmatter.challenge_image}`} alt="Placeholder" class="h-full w-auto object-cover 2xl:rounded-2xl" />
+                    ) : null }
+                </div>
+                <div class="w-full max-w-[1540px] flex flex-col md:grid grid-cols-2 sm:gap-7 sm:px-9 md:px-11">
                     {frontmatter.challenge_images.map((image, index) => (
                         <img src={`../${image}`} alt="Placeholder" class={ index === totalImages && totalImages % 2 !== 0 ? 'col-span-2 h-full object-cover sm:rounded-2xl' : 'col-span-1 h-full object-cover sm:rounded-2xl'} />
                     ))}
                 </div>
             </section/>
-            <section class="w-full h-min px-6 py-9 sm:px-11 sm:py-[100px] flex flex-col md:flex-row lg:grid lg:grid-cols-2 gap-7">
-                <h2 class="text-black text-mh2 sm:text-h2 md:w-3/6 lg:w-full">Solution</h2>
-                <div class="flex flex-col gap-5">
-                    {frontmatter.solution_text.map((text) => (
-                        <h3 class="text-black text-pl">{text}</h3>
-                    ))}
+            <section class="w-full h-min px-6 py-9 sm:px-11 sm:py-[100px] flex justify-center">
+                <div class="w-full max-w-[1440px] flex flex-col md:flex-row lg:grid lg:grid-cols-2 gap-7">
+                    <h2 class="text-black text-mh2 sm:text-h2 md:w-3/6 lg:w-full">Solution</h2>
+                    <div class="flex flex-col gap-5">
+                        {frontmatter.solution_text.map((text) => (
+                            <h3 class="text-black text-pl">{text}</h3>
+                        ))}
+                    </div>
                 </div>
             </section>
             {frontmatter.challenge_image !== '' ? (
-                <section class="w-full">
-                    <img src={`../${frontmatter.solution_image}`} alt="Placeholder" class="h-auto w-full object-cover" />
+                <section class="w-full flex justify-center">
+                    <img src={`../${frontmatter.solution_image}`} alt="Placeholder" class="h-auto w-full max-w-[1440px] object-cover 2xl:rounded-2xl" />
                 </section/>
             ) : null }
-            <section class="w-full h-min px-6 py-9 sm:px-11 sm:py-[100px] flex flex-col gap-8" id="works">
-                <h2 class="text-black text-mh2 sm:text-h2 md:w-3/6 lg:w-full mt-6">More work</h2>
-                <div class="flex md:grid grid-cols-2 flex-col md:flex-row gap-8 md:gap-9">
-                    {works.map((work, index) => (
-                        work.frontmatter.title !== frontmatter.title && ((frontmatter.index > 3 && index < 2) || (frontmatter.index <= 3 && index <= 2)) ? (
-                            <a href={`/works/${work.frontmatter.slug}/`} class="col-span-1 h-auto flex flex-col gap-6 sm:gap-5">
-                                <div class="relative rounded-2xl sm:h-full bg-100 bg-center w-full">
-                                    <img src={`../${work.frontmatter.placeholder_main}`} alt="Placeholder" class="rounded-2xl h-[340px] sm:h-full max-h-[450px] w-full object-cover" />
-                                    <div class="absolute left-5 bottom-4 flex flex-row items-end gap-2 flex-wrap">
-                                    {work.frontmatter.labels.map(label => (
-                                        <p class="text-pn text-black leading-snug px-4 py-1 rounded-full bg-white-100">{label}</p>
-                                    ))}
+            <section class="w-full h-min px-6 py-9 sm:px-11 sm:py-[100px] flex justify-center" id="works">
+                <div class="w-full max-w-[1440px] flex flex-col gap-8">
+                    <h2 class="text-black text-mh2 sm:text-h2 md:w-3/6 lg:w-full mt-6">More work</h2>
+                    <div class="flex md:grid grid-cols-2 flex-col md:flex-row gap-8 md:gap-9">
+                        {works.map((work, index) => (
+                            work.frontmatter.title !== frontmatter.title && ((frontmatter.index > 3 && index < 2) || (frontmatter.index <= 3 && index <= 2)) ? (
+                                <a href={`/works/${work.frontmatter.slug}/`} class="col-span-1 h-auto flex flex-col gap-6 sm:gap-5">
+                                    <div class="relative rounded-2xl sm:h-full bg-100 bg-center w-full">
+                                        <img src={`../${work.frontmatter.placeholder_main}`} alt="Placeholder" class="rounded-2xl h-[340px] sm:h-full max-h-[450px] w-full object-cover" />
+                                        <div class="absolute left-5 bottom-4 flex flex-row items-end gap-2 flex-wrap">
+                                        {work.frontmatter.labels.map(label => (
+                                            <p class="text-pn text-black leading-snug px-4 py-1 rounded-full bg-white-100">{label}</p>
+                                        ))}
+                                        </div>
                                     </div>
-                                </div>
-                                <h4 class="text-black text-h4 sm:font-semibold">{work.frontmatter.title}</h4>
-                            </a>
-                        ) : null
-                    ))}
+                                    <h4 class="text-black text-h4 sm:font-semibold">{work.frontmatter.title}</h4>
+                                </a>
+                            ) : null
+                        ))}
+                    </div>
                 </div>
             </section/>
 		</main>
