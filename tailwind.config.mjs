@@ -44,6 +44,7 @@ export default {
 			'pl': ['20px', {lineHeight: '140%', fontWeight: '400', letterSpacing: '-1px'}],
 			'pm': ['16px', {lineHeight: '130%', fontWeight: '400', letterSpacing: '-0.8px'}],
 			'pn': ['14px', {lineHeight: '130%', fontWeight: '400', letterSpacing: '-0.7px'}],
+			'p': ['18px', {lineHeight: '130%', fontWeight: '400', letterSpacing: '-0.7px'}],
 			'ps': ['12px', {lineHeight: '130%', fontWeight: '400', letterSpacing: '-0.6px'}],
 			'pb': ['16px', {lineHeight: '100%', fontWeight: '400', letterSpacing: '-0.8px'}],
 			'mh1': ['36px', {lineHeight: '100%', fontWeight: '400', letterSpacing: '-1.8px'}],
