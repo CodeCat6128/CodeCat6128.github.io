@@ -72,7 +72,7 @@ const totalImages = frontmatter.challenge_images.length;
                 </div>
                 <div class="w-full max-w-[1540px] flex flex-col md:grid grid-cols-2 sm:gap-7 sm:px-9 md:px-11">
                     {frontmatter.challenge_images.map((image, index) => (
-                        <img src={`../${image}`} alt="Placeholder" class={ index === totalImages && totalImages % 2 !== 0 ? 'col-span-2 h-full object-cover sm:rounded-2xl' : 'col-span-1 h-full object-cover sm:rounded-2xl'} />
+                        <img src={`../${image}`} alt="Placeholder" class={ index === totalImages && totalImages % 2 !== 0 ? 'col-span-2 h-auto object-cover sm:rounded-2xl' : 'col-span-1 h-auto object-cover sm:rounded-2xl'} />
                     ))}
                 </div>
             </section/>
