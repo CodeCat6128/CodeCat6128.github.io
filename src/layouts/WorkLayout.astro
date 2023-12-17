@@ -67,7 +67,7 @@ const totalImages = frontmatter.challenge_images.length;
             <section class="w-full flex items-center flex-col gap-7">
                 <div class="w-full max-w-[1440px]">
                     {frontmatter.challenge_image !== '' ? (
-                        <img src={`../${frontmatter.challenge_image}`} alt="Placeholder" class="h-full w-auto object-cover 2xl:rounded-2xl" />
+                        <img src={`../${frontmatter.challenge_image}`} alt="Placeholder" class="h-auto w-full object-cover 2xl:rounded-2xl" />
                     ) : null }
                 </div>
                 <div class="w-full max-w-[1540px] flex flex-col md:grid grid-cols-2 sm:gap-7 sm:px-9 md:px-11">
