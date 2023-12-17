@@ -11,13 +11,13 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_FAVICON, SITE_LOGO } from '../consts
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth min-w-[380px]">
+<html lang="en" class="scroll-smooth min-w-[300px]">
 	<head>
 		<BaseHead title={`${SITE_TITLE} | Digital Designer`} description={SITE_DESCRIPTION} favicon={SITE_FAVICON} />
 	</head>
 	<body class="text-black bg-white-200 min-h-screen font-inter m-0 p-0">
 		<Header logo={SITE_LOGO} work_url='#works' contact_url='#footer' />
-		<main class="z-10">
+		<main class="z-10" transition:animate="slide">
 			<Hero about_url='#about' />
 			<About works_url='#works' />
 			<Works />
