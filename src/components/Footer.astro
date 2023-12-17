@@ -13,34 +13,13 @@ const linkedin_link = 'https://www.linkedin.com/in/ravilitikeev/';
 const cv_link = '../Ravil_CV.pdf';
 ---
 
-<footer class="px-6 sm:px-10 md:px-11 py-9 sm:py-11 md:py-12 bg-black flex justify-center flex-col w-screen" id="footer">
-	<h1 class="text-white-200 text-mh1 sm:text-h1 mt-6 sm:mt-9 md:mt-12 mb-8 sm:mb-9 md:mb-10 text-center">Are you open to collaborating?</h1>
-	<p class="text-white-200 text-ps sm:text-pn text-center md-2 sm:mb-4">Write me an email:</p>
-	<a href={"mailto:" + email} class="text-white-200 text-pm sm:text-pl text-center">{email}</a>
-	<div class="flex flex-col md:flex-row items-start md:items-end justify-center md:justify-between gap-7 sm:gap-5 lg:gap-7 w-full mt-11 sm:mt-12 md:mt-13">
-		<div class="flex sm:hidden gap-2 text-left flex-col">
-			<p class="text-gray-200 leading-snug text-pn">Elsewhere</p>
-			<div class="flex flex-row gap-4">
-				<a href={behance_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">Behance</a>
-				<a href={linkedin_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">LinkedIn</a>
-				<a href={cv_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">CV</a>
-			</div>
-		</div>
-		<div class="flex flex-col sm:flex-row justify-between md:justify-start gap-7 lg:gap-12 w-full md:w-fit lg:w-full">
-			<div class="flex gap-2 text-left flex-col">
-				<p class="text-gray-200 leading-snug text-pn">Designed by</p>
-				<a href={top_url} rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">Ravil Itikeev</a>
-			</div>
-			<!-- <div class="flex gap-2 text-left flex-col">
-				<p class="text-gray-200 leading-snug text-pn">Developed by</p>
-				<div class="flex flex-row gap-4">
-					<a href={pavel_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">Pavel Paranin</a>
-					<a href={artem_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">Artem Jasan</a>
-				</div>
-			</div> -->
-		</div>
-		<div class="hidden sm:flex items-end justify-between flex-row gap-7 w-full md:w-fit lg:w-full">
-			<div class="flex gap-2 text-left flex-col">
+<footer class="px-6 sm:px-10 md:px-11 py-9 sm:py-11 md:py-12 bg-black flex justify-center w-full" id="footer">
+	<div class="flex justify-center flex-col w-full max-w-[1440px]">
+		<h1 class="text-white-200 text-mh1 sm:text-h1 mt-6 sm:mt-9 md:mt-12 mb-8 sm:mb-9 md:mb-10 text-center">Are you open to collaborating?</h1>
+		<p class="text-white-200 text-ps sm:text-pn text-center md-2 sm:mb-4">Write me an email:</p>
+		<a href={"mailto:" + email} class="text-white-200 text-pm sm:text-pl text-center">{email}</a>
+		<div class="flex flex-col md:flex-row items-start md:items-end justify-center md:justify-between gap-7 sm:gap-5 lg:gap-7 w-full mt-11 sm:mt-12 md:mt-13">
+			<div class="flex sm:hidden gap-2 text-left flex-col">
 				<p class="text-gray-200 leading-snug text-pn">Elsewhere</p>
 				<div class="flex flex-row gap-4">
 					<a href={behance_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">Behance</a>
@@ -48,8 +27,31 @@ const cv_link = '../Ravil_CV.pdf';
 					<a href={cv_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">CV</a>
 				</div>
 			</div>
-			<a href={top_url} class="text-white-200 leading-snug text-pm">Back to top</a>
+			<div class="flex flex-col sm:flex-row justify-between md:justify-start gap-7 lg:gap-12 w-full md:w-fit lg:w-full">
+				<div class="flex gap-2 text-left flex-col">
+					<p class="text-gray-200 leading-snug text-pn">Designed by</p>
+					<a href={top_url} rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">Ravil Itikeev</a>
+				</div>
+				<!-- <div class="flex gap-2 text-left flex-col">
+					<p class="text-gray-200 leading-snug text-pn">Developed by</p>
+					<div class="flex flex-row gap-4">
+						<a href={pavel_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">Pavel Paranin</a>
+						<a href={artem_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">Artem Jasan</a>
+					</div>
+				</div> -->
+			</div>
+			<div class="hidden sm:flex items-end justify-between flex-row gap-7 w-full md:w-fit lg:w-full">
+				<div class="flex gap-2 text-left flex-col">
+					<p class="text-gray-200 leading-snug text-pn">Elsewhere</p>
+					<div class="flex flex-row gap-4">
+						<a href={behance_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">Behance</a>
+						<a href={linkedin_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">LinkedIn</a>
+						<a href={cv_link} target="_blank" rel="noopener noreferrer" class="text-white-200 leading-snug text-pm">CV</a>
+					</div>
+				</div>
+				<a href={top_url} class="text-white-200 leading-snug text-pm">Back to top</a>
+			</div>
+			<a href={top_url} class="flex sm:hidden text-white-200 leading-snug text-pm w-100 justify-center w-full mt-[36px]">Back to top</a>
 		</div>
-		<a href={top_url} class="flex sm:hidden text-white-200 leading-snug text-pm w-100 justify-center w-full mt-[36px]">Back to top</a>
 	</div>
 </footer>
