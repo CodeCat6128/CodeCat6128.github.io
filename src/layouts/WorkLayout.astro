@@ -91,7 +91,8 @@ const totalImages = frontmatter.challenge_images.length;
                     <img src={`../${frontmatter.solution_image}`} alt="Placeholder" class="h-auto w-full max-w-[1440px] object-cover 2xl:rounded-2xl" />
                 </section/>
             ) : null }
-            <section class="w-full h-min px-6 py-9 sm:px-11 sm:py-[100px] flex justify-center" id="works">
+            <section class="w-full h-min px-6 py-9 sm:px-11 sm:py-[100px] flex justify-center relative">
+                <div class="absolute w-0 h-0 top-[-60px] md:top-[-120px] left-0" id="works" />
                 <div class="w-full max-w-[1440px] flex flex-col gap-8">
                     <h2 class="text-black text-mh2 sm:text-h2 md:w-3/6 lg:w-full mt-6">More work</h2>
                     <div class="flex md:grid grid-cols-2 flex-col md:flex-row gap-8 md:gap-9">

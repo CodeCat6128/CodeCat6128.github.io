@@ -13,15 +13,15 @@ const title = 'Digital Designer from Prague';
 const decription = 'Hi, I’m Ravil Itikeev, a digital designer with a keen eye for user-centered design.'
 ---
 
-<section class="h-[600px] sm:min-h-screen sm:h-min w-full bg-black pt-[70px] sm:pt-13 md:pb-9 md:px-12 flex justify-center" id="hero">
+<section class="sm:min-h-screen h-min w-full bg-black pt-[70px] sm:pt-13 md:pb-9 md:px-12 flex justify-center" id="hero">
     <div class="w-full max-w-[1440px] flex flex-col justify-between">
         <div class="hidden md:block" />
         <div class="w-full h-full md:h-fit flex justify-center flex-col-reverse md:flex-row gap-9 md:gap-12 lg:gap-14">
             <div class="h-full relative hidden lg:flex justify-end w-full">
                 <img src={placeholder_desktop_url} alt="Placeholder" class=" h-full lg:w-9/12 xl:w-7/12 object-contain object-right">
             </div>
-            <img src={placeholder_mobile_url} alt="Placeholder" class="block md:hidden h-auto w-full">
-            <div class="w-full h-full md:h-min">
+            <img src={placeholder_mobile_url} alt="Placeholder" class="block md:hidden h-[240px] 2esm:h-[380px] sm:h-[460px] w-full object-cover">
+            <div class="w-full h-full md:h-min mt-9 md:mt-0">
                 <div class="flex flex-col gap-7 h-full justify-center md:h-min w-full xl:w-5/6 z-10 px-6 sm:px-9 md:px-0">
                     <h1 class="text-mh1 sm:text-h1 md:text-[52px] font-[600] leading-[100%] lg:text-h1 text-white-200 break-words w-full">{title}</h1>
                     <p class="text-pl text-white-200 break-words w-full">{decription}</p>
