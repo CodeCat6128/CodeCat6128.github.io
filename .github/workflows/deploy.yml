@@ -1,5 +1,4 @@
-name: Ravil Itikeev
-
+name: Pavel Sheludko | CodeCat6128
 on:
   # Trigger the workflow every time you push to the `main` branch
   # Using a different branch name? Replace `main` with your branch’s name
