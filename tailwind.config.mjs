@@ -24,11 +24,11 @@ export default {
 		},
 		extend: {
 			boxShadow: {
-				's': '6px 6px 11px #d5dbe3, -6px -6px 11px #ffffff',
-				'm': '9px 9px 13px #d5dbe3, -9px -9px 13px #ffffff',
-				'l': '15px 15px 15px #d5dbe3, -15px -15px513px #ffffff',
-				'default': '0px 0px 90px #d5dbe3',
-				'bottom': '0px 45px 50px -45px #d5dbe3',
+				's': '6px 6px 11px #d4d5d5, -6px -6px 11px #ffffff',
+				'm': '9px 9px 13px #d4d5d5, -9px -9px 13px #ffffff',
+				'l': '15px 15px 15px #d4d5d5, -15px -15px513px #ffffff',
+				'default': '0px 0px 90px #d4d5d5',
+				'bottom': '0px 45px 50px -45px #d4d5d5',
 			}
 		}
 	}
