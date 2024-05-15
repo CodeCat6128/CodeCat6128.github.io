@@ -1,18 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
-import About from '../components/About.astro';
 import Skills from '../components/Skills.astro';
-import Languages from '../components/Languages.astro';
+import About from '../components/About.astro';
 import Works from '../components/Works.astro';
-import Social from '../components/Social.astro';
+import Contact from '../components/Contact.astro';
 ---
 
-<Layout title="Pavel Sheludko | CodeCat6128" description="Welcome to my portfolio website">
-	<Hero />
-	<About />
-	<Skills />
-	<Languages />
-	<Works />
-	<Social />
+<Layout title="CodeCat6128 | Pavel Sheludko" description="Welcome to my portfolio website">
+	<Header />
+	<main class="w-full">
+		<Hero />
+		<Skills />
+		<Works />
+		<About />
+		<Contact />
+	</main>
+	<Footer />
 </Layout>
