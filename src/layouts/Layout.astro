@@ -1,13 +1,11 @@
 ---
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-
 interface Props {
 	title: string;
 	description: string;
+	logourl: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, logourl } = Astro.props;
 ---
 
 <!doctype html>
@@ -16,14 +14,19 @@ const { title, description } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content={description}>
-		<link rel="icon" type="image/ico" href="/favicon.ico" />
+		<link rel="icon" type="image/ico" href={logourl} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 		<title>{title}</title>
+		<style>
+			body {
+				font-family: "Sora", sans-serif;
+				font-optical-sizing: auto;
+			}
+		</style>
 	</head>
-	<body class="bg-gray-50 w-screen min-w-[256px] max-w-screen min-h-screen h-fit flex flex-col duration-200 font-mono subpixel-antialiased overflow-x-hidden">
-		<Header />
-		<main class="nm:container nm:mx-auto px-5 pb-4 z-100">
-			<slot />
-		</main>
-		<Footer />
+	<body class="relative bg-white w-screen min-w-[256px] max-w-screen min-h-screen h-fit duration-200 subpixel-antialiased overflow-x-hidden">
+		<slot />
 	</body>
 </html>

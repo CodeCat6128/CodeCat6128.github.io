@@ -1,26 +1,23 @@
-<section class="my-9 flex flex-col lg:flex-row gap-5 relative z-0">
-    <div class="absolute top-[-200px]" id="section?works" />
-    <h1 class="text-gray-900 text-4xl font-bold lg:w-full">Works</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-5 w-full">
-        <a href="https://www.ravildsgn.com/" target="_blank" class="cursor-no-drop flex flex-row justify-between items-center px-5 py-4 gap-3 bg-gray-50 shadow-s hover:shadow-m hover:-translate-y-1 rounded-xl duration-200 ease-in-out">
-            <img src="/spgames-favicon.png" alt="SP GAMES ICON" class="w-6 rounded-full">
-            <h6 class="text-gray-900 font-bold text-xl">SPG</h6>
-        </a>
-        <a href="https://www.ravildsgn.com/" target="_blank" class="cursor-pointer flex flex-row justify-between items-center px-5 py-4 gap-3 bg-gray-50 shadow-s hover:shadow-m hover:-translate-y-1 rounded-xl duration-200 ease-in-out">
-            <img src="/rdsgn-favicon.png" alt="RDSGN ICON" class="w-6 rounded-full">
-            <h6 class="text-gray-900 font-bold text-xl">RDSGN</h6>
-        </a>
-        <a target="_blank" class="cursor-no-drop flex flex-row justify-between items-center px-5 py-4 gap-3 bg-gray-50 shadow-s hover:shadow-m hover:-translate-y-1 rounded-xl duration-200 ease-in-out">
-            <img src="/irt-favicon.png" alt="IRT ICON" class="w-6">
-            <h6 class="text-gray-900 font-bold text-xl">IRT</h6>
-        </a>
-        <a href="https://meetnubi.io/" target="_blank" class="cursor-pointer flex flex-row justify-between items-center px-5 py-4 gap-3 bg-gray-50 shadow-s hover:shadow-m hover:-translate-y-1 rounded-xl duration-200 ease-in-out">
-            <img src="/nubi-favicon.ico" alt="NUBI ICON" class="w-6 rounded-full">
-            <h6 class="text-gray-900 font-bold text-xl">NUBI</h6>
-        </a>
-        <a href="https://www.t7tlabs.com/" target="_blank" class="cursor-pointer flex flex-row justify-between items-center px-5 py-4 gap-3 bg-gray-50 shadow-s hover:shadow-m hover:-translate-y-1 rounded-xl duration-200 ease-in-out">
-            <img src="/t7t-favicon.jpg" alt="T7T ICON" class="w-6 rounded-full">
-            <h6 class="text-gray-900 font-bold text-xl">T7T</h6>
-        </a>
+---
+import Work from '../elements/Work.astro';
+---
+
+<section class="w-full py-[60px] bg-black" id="works">
+    <div class="min-w-[256px] nm:container nm:mx-auto w-full px-4 md:px-8 py-5 md:py-6 flex flex-col text-center items-center justify-center gap-y-24">
+        <h2 class="text-white font-normal text-4xl lg:text-5xl leading-snug">My&nbsp;<b class="font-extrabold">Works</b></h2>
+        <div class="flex flex-col gap-y-40 w-full justify-center">
+            <Work index='01' title='My Photography Website' link='/photography' imageurl='/'>
+                I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
+            </Work>
+            <Work index='02' title='My Works in 3D' link='/3d' imageurl='/'>
+                I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
+            </Work>
+            <Work index='03' title='Ravil DSGN Portfolio' link='https://www.ravildsgn.com/' imageurl='/'>
+                I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
+            </Work>
+            <Work index='04' title='Meet Nubi Website' link='https://meetnubi.io/' imageurl='/'>
+                I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
+            </Work>
+        </div>
     </div>
 </section>
