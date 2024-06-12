@@ -8,4 +8,7 @@ export default defineConfig({
   integrations: [tailwind()],
   output: "server",
   adapter: vercel(),
+  build: {
+    outDir: 'dist', // Ensure this matches the expected output directory
+  },
 });
