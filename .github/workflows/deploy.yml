@@ -2,7 +2,6 @@ name: Pavel Sheludko | CodeCat6128
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:
 
 permissions:
   contents: read
