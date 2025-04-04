@@ -5,6 +5,7 @@ export default {
 		screens: {
 			'mc': '372px',
 			'sm': '452px',
+			'nmx': '560px',
 			'nm': '640px',
 			'md': '768px',
 			'lg': '1024px',

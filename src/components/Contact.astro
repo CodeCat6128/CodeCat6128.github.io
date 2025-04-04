@@ -24,12 +24,12 @@
 </script>
 
 <section class="w-full py-[60px]" id="section?contact">
-    <div class="min-w-[256px] nm:container nm:mx-auto w-full px-4 md:px-8 py-5 md:py-6 flex flex-col nm:grid grid-cols-2 auto-cols-fr gap-10 nm:gap-20">
-        <form value="Send" class="flex flex-col gap-5" id="contact-form">
+    <div class="min-w-[256px] nm:container nm:mx-auto w-full px-4 md:px-8 py-5 md:py-6 flex flex-col lg:grid grid-cols-2 auto-cols-fr gap-10 nm:gap-20">
+        <form value="Send" class="flex flex-col gap-5 nm:order-2 lg:order-none" id="contact-form">
             <input type="text" name="name" id="name" placeholder="Your name" autocomplete="off" class="relative px-6 py-[18px] text-zinc-500 font-medium text-base leading-5 border-[3px] border-black rounded-md bg-white hover:bg-zinc-100 focus:shadow-lg outline-none duration-200 ease-in-out" minlength="2" maxlength="70" required>
             <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" class="relative px-6 py-[18px] text-zinc-500 font-medium text-base leading-5 border-[3px] border-black rounded-md bg-white hover:bg-zinc-100 focus:shadow-lg outline-none duration-200 ease-in-out" minlength="6" maxlength="230" required>
             <textarea name="message" id="message" rows="6" placeholder="How can I help?*" autocomplete="off" class="relative px-6 py-[18px] text-zinc-500 font-medium text-base leading-5 border-[3px] border-black rounded-md bg-white hover:bg-zinc-100 focus:shadow-lg outline-none duration-200 ease-in-out" minlength="12" required></textarea>
-            <div class="flex flex-col nm:flex-row gap-5 nm:gap-6 w-full">
+            <div class="flex flex-col nmx:flex-row lg:flex-col xl:flex-row gap-5 nm:gap-6 w-full">
                 <button type="submit" class="flex flex-row items-center border-[3px] border-black h-min px-5 py-4 hover:text-black bg-black hover:bg-white text-white text-xl leading-6 gap-1 font-semibold rounded-md w-full duration-200 ease-in-out">Get In Touch</button>
                 <div class="flex flex-row gap-5 nm:gap-6 w-full">
                     <a href="https://www.linkedin.com/in/codecat6128" target="_blank" class="flex flex-row items-center justify-center border-[3px] p-4 border-black h-full min-w-16 hover:text-black bg-black hover:bg-white text-white fill-white hover:fill-black text-xl leading-6 font-semibold rounded-md duration-200 ease-in-out">
@@ -47,8 +47,8 @@
                 </div>
             </div>
         </form>
-        <div class="flex flex-col gap-5 text-start items-start justify-center">
-            <h2 class="text-black font-extrabold text-4xl lg:text-5xl leading-snug">
+        <div class="flex flex-col gap-5 text-start items-start md:items-center lg:items-start justify-center">
+            <h2 class="text-black font-extrabold text-3xl md:text-4xl lg:text-5xl leading-snug md:text-center lg:text-left">
                 Let’s&nbsp;
                 <b class="hidden lg:inline font-extrabold text-white leading-snug" 
                     style="text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;">
@@ -59,10 +59,10 @@
                 &nbsp;
                 for<br>Something special
             </h2>
-            <p class="text-zinc-500 font-normal text-base">I will be happy to work in your team as a freelance developer as a Front-end or Unit/C# developer.</p>
-            <div class="flex flex-col gap-4 mt-5">
-                <a href="mailto:sp6835317@gmail.com" class="text-black font-semibold text-[28px] leading-8">sp6835317@gmail.com</a>
-                <p data-text="+49015236114709" class="text-black font-semibold text-[28px] leading-8 text-start select-all">+49 0152 36114709</p>
+            <p class="text-zinc-500 font-normal text-base md:text-center lg:text-left md:max-w-[500px] lg:max-w-none">I will be happy to work in your team as a freelance developer as a Front-end or Unity/C# developer.</p>
+            <div class="flex flex-col nm:flex-row lg:flex-col gap-4 mt-5 w-full justify-between">
+                <a href="mailto:sp6835317@gmail.com" class="text-black font-semibold text-xl md:text-3xl leading-6 md:leading-8">sp6835317@gmail.com</a>
+                <p data-text="+49015236114709" class="text-black font-semibold text-xl md:text-3xl leading-6 md:leading-8 text-start select-all">+49 0152 36114709</p>
             </div>
         </div>
     </div>
