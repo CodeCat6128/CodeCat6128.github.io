@@ -1,4 +1,4 @@
-<header class="bg-white min-w-[256px] w-screen fixed top-0 inset-x-0 h-fit z-10">
+<header class="bg-white min-w-[256px] fixed top-0 left-0 right-0 inset-x-0 h-fit z-10">
     <div class="min-w-[256px] nm:container nm:mx-auto px-4 md:px-8 py-4 md:py-6 flex flex-row justify-between items-center">
         <img src="/logo.jpg" alt="logo" class="h-10 nm:h-11 md:h-12 lg:h-14 w-10 nm:w-11 md:w-12 lg:w-14 rounded-full">
         <div class="hidden nm:flex flex-row gap-8 h-min">
@@ -25,14 +25,15 @@
             </svg>
         </div>
     </div>
-    <div class="min-w-[256px] absolute h-screen top-[76px] left-0 right-0 bg-white z-50 flex nm:hidden hidden flex-col justify-between gap-5 px-5 pt-5 pb-[96px]" id="nav-menu">
+    <div class="min-w-[256px] absolute h-screen top-[76px] left-0 right-0 bg-white z-50 flex nm:hidden hidden flex-col justify-start gap-5 px-5 pt-5 pb-[96px]" id="nav-menu">
         <div class="nm:container nm:mx-auto gap-3 flex flex-col w-full">
             <a href="#experience" class="text-black text-2xl underline decoration-2 hover:decoration-black decoration-white font-semibold duration-200 ease-in-out" id="nav-link">Experience</a>
             <!-- <a href="#works" class="text-black text-2xl underline decoration-2 hover:decoration-black decoration-white font-semibold duration-200 ease-in-out" id="nav-link">Works</a> -->
             <a href="#about" class="text-black text-2xl underline decoration-2 hover:decoration-black decoration-white font-semibold duration-200 ease-in-out" id="nav-link">About Me</a>
             <a href="#contact" class="text-black text-2xl underline decoration-2 hover:decoration-black decoration-white font-semibold duration-200 ease-in-out" id="nav-link">Contact Me</a>
+            <div class="w-full h-[2px] bg-black my-4" />
+            <a href="/resources/cv.pdf" target="_blank" class="text-black text-2xl underline decoration-2 hover:decoration-black decoration-white font-semibold duration-200 ease-in-out" id="nav-link">Resume</a>
         </div>
-        <a href="/resources/cv.pdf" target="_blank" class="flex flex-row items-center border-[3px] border-black h-min px-5 py-4 hover:text-black bg-black hover:bg-white text-white text-xl leading-6 gap-1 font-semibold rounded-md duration-200 ease-in-out" id="nav-link">Resume</a>
     </div>
 </header>
 <script src="../scripts/header.js">
